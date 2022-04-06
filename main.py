@@ -17,8 +17,8 @@ def page_index():
 
 
 @app.route("/candidates/<int:id>")
-def profile(ident):
-    candidate = candidates[ident]
+def profile(id):
+    candidate = candidates[id]
     str_candidates = f"<img src={candidate['picture']}></img> <br><br>{candidate['name']} <br>{candidate['position']}" \
                      f" <br>{candidate['skills']} <br><br> "
 

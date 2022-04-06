@@ -8,6 +8,6 @@ def load_candidates():
         for i in data:
             candidates[i['id']] = i
         pprint(candidates)
-        return data
+        return candidates
 
 
