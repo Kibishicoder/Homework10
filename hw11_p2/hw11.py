@@ -14,7 +14,7 @@ def index():
 @app.route("/candidate/<int:uid>")
 def profile(uid):
     candidate = get_candidate(uid)
-    return render_template('ckentprofile.html', candidate=candidate)
+    return render_template('hw_ckentprofile.html', candidate=candidate)
 
 
 @app.route("/search/<name>")
